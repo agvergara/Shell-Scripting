@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "nombre script: $0"
+echo "primer argumento: $1"
+echo "segundo argumento: $2"

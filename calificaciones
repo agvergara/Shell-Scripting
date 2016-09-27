@@ -1,0 +1,7 @@
+#!/bin/bash
+presentados=`cat $1 | wc -l`
+noapto=`cat $1 | grep "no apto" | wc -l`
+apto=$(($presentados-$noapto)) 
+
+echo "Hay $apto personas aprobadas"
+echo "Hay $noapto personas suspensas"
